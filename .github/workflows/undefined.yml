@@ -1,0 +1,12 @@
+name: CodeQL Fly Analysis
+on:
+  push:
+    branches:
+      - main
+      - master
+jobs:
+  code-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
